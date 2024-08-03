@@ -5,7 +5,7 @@ from cinema.models import Movie
 class MovieSerializer(serializers.ModelSerializer):
     id = serializers.IntegerField(read_only=True)
     title = serializers.CharField(max_length=250)
-    description = serializers.CharField(max_length=None)
+    description = serializers.CharField(max_length=555)
     duration = serializers.IntegerField()
 
     class Meta:
